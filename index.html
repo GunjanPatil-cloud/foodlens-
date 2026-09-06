@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Safe environment shim: ensure window.fetch has both getter and setter
+      (function() {
+        try {
+          var target = window;
+          var desc = Object.getOwnPropertyDescriptor(target, 'fetch');
+          if (!desc && typeof Window !== 'undefined' && Window.prototype) {
+            target = Window.prototype;
+            desc = Object.getOwnPropertyDescriptor(target, 'fetch');
+          }
+          if (!desc) {
+            var proto = Object.getPrototypeOf(window);
+            while (proto && !desc) {
+              desc = Object.getOwnPropertyDescriptor(proto, 'fetch');
+              if (desc) {
+                target = proto;
+                break;
+              }
+              proto = Object.getPrototypeOf(proto);
+            }
+          }
+
+          var nativeFetch = typeof window.fetch === 'function' ? window.fetch.bind(window) : null;
+          var customFetch = null;
+
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return customFetch || nativeFetch || (desc && desc.get ? desc.get.call(this) : undefined);
+            },
+            set: function(fn) {
+              customFetch = fn;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          try {
+            var _orig = window.fetch;
+            if (_orig) {
+              window.fetch = function() {
+                return _orig.apply(this, arguments);
+              };
+            }
+          } catch (_) {}
+        }
+      })();
+    </script>
+    <title>FoodLens — Scan. Understand. Compare. Buy Better.</title>
+    <meta name="description" content="Smart food label scanner, OCR text extractor, and Legal Metrology compliance verification platform with real-time product comparison and authentication." />
+    <meta property="og:title" content="FoodLens — Scan. Understand. Compare. Buy Better." />
+    <meta property="og:description" content="Smart food label scanner, OCR text extractor, and Legal Metrology compliance verification platform with real-time product comparison and authentication." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

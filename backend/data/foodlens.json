@@ -1,0 +1,1249 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Priya Sharma",
+      "email": "consumer@foodlens.io",
+      "passwordHash": "$2b$10$7Fq.kVANnNbUoVanWBia7.0//15ux/KGQuj0XNi4Wt7t9q5KUxdZK",
+      "role": "consumer",
+      "createdAt": "2026-01-10T10:00:00.000Z"
+    },
+    {
+      "id": "u2",
+      "name": "Anandmilan Foods Official",
+      "email": "seller@foodlens.io",
+      "passwordHash": "$2b$10$7Fq.kVANnNbUoVanWBia7.0//15ux/KGQuj0XNi4Wt7t9q5KUxdZK",
+      "role": "seller",
+      "createdAt": "2026-02-14T08:30:00.000Z"
+    },
+    {
+      "id": "u3",
+      "name": "Rajesh Verma (FSSAI Inspector)",
+      "email": "officer@foodlens.io",
+      "passwordHash": "$2b$10$7Fq.kVANnNbUoVanWBia7.0//15ux/KGQuj0XNi4Wt7t9q5KUxdZK",
+      "role": "officer",
+      "createdAt": "2026-03-01T09:15:00.000Z"
+    }
+  ],
+  "manufacturers": [
+    {
+      "id": "m1",
+      "name": "Anandmilan Foods Pvt. Ltd.",
+      "address": "Plot 14, MIDC Industrial Area, Nashik, Maharashtra – 422010, India",
+      "info": "FSSAI-licensed packaged food manufacturer producing biscuits, snacks and breakfast cereals since 2004.",
+      "fssaiLicense": "11518018000234",
+      "productIds": [
+        "p1",
+        "p4",
+        "p_off_8901491101837",
+        "p_bar_901058017687"
+      ]
+    },
+    {
+      "id": "m2",
+      "name": "Sundara Beverages Ltd.",
+      "address": "Sector 8, Industrial Estate, Vadodara, Gujarat – 390016, India",
+      "info": "Manufactures packaged juices, flavoured drinks and dairy-based beverages, distributed across Western India.",
+      "fssaiLicense": "10719022000567",
+      "productIds": [
+        "p2",
+        "p5"
+      ]
+    },
+    {
+      "id": "m3",
+      "name": "Greenfield Naturals",
+      "address": "Village Road, Ludhiana, Punjab – 141001, India",
+      "info": "Specialises in whole-grain and low-sugar packaged snacks positioned as healthier alternatives.",
+      "fssaiLicense": "12117001000891",
+      "productIds": [
+        "p3"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "barcode": "8901030814",
+      "name": "NutriCrunch Multigrain Biscuits",
+      "brand": "NutriCrunch",
+      "category": "Biscuits",
+      "manufacturerId": "m1",
+      "mrp": "₹45.00",
+      "netQty": "200 g",
+      "mfgDate": "03/2026",
+      "expiry": "09/2026",
+      "origin": "Made in India",
+      "storage": "Store in a cool, dry place. Keep away from direct sunlight.",
+      "complianceStatus": "WARNING",
+      "ingredients": [
+        {
+          "name": "Refined Wheat Flour",
+          "flag": false
+        },
+        {
+          "name": "Sugar",
+          "flag": false
+        },
+        {
+          "name": "Edible Vegetable Oil",
+          "flag": false
+        },
+        {
+          "name": "Multigrain Mix (Oats, Ragi, Bajra)",
+          "flag": false
+        },
+        {
+          "name": "Raising Agents (INS 503(ii), INS 500(ii))",
+          "flag": false
+        },
+        {
+          "name": "Emulsifier (INS 322)",
+          "flag": true,
+          "note": "Class name present; specific source not legible on label."
+        },
+        {
+          "name": "Artificial Flavouring Substances",
+          "flag": true,
+          "note": "Type of flavour not specified on pack."
+        },
+        {
+          "name": "Iodised Salt",
+          "flag": false
+        }
+      ],
+      "ingredientNote": "2 of 8 declared ingredients need a clearer label photo to confirm full disclosure.",
+      "nutrition": {
+        "calories": {
+          "value": 462,
+          "unit": "kcal",
+          "pct": 62
+        },
+        "sugar": {
+          "value": 18.4,
+          "unit": "g",
+          "pct": 46
+        },
+        "fat": {
+          "value": 16.2,
+          "unit": "g",
+          "pct": 54
+        },
+        "protein": {
+          "value": 7.1,
+          "unit": "g",
+          "pct": 24
+        },
+        "sodium": {
+          "value": 410,
+          "unit": "mg",
+          "pct": 41
+        }
+      },
+      "claims": [
+        {
+          "claim": "Sugar Free",
+          "status": "NEEDS VERIFICATION",
+          "explanation": "Ingredient list declares sugar; review against applicable claim requirements before relying on this claim."
+        },
+        {
+          "claim": "Rich in Fibre",
+          "status": "NEEDS VERIFICATION",
+          "explanation": "Fibre content not listed in the extracted nutrition panel — recommend confirming against the manufacturer's declared values."
+        },
+        {
+          "claim": "No Added Preservatives",
+          "status": "PASS",
+          "explanation": "No preservative class names detected among the extracted ingredients."
+        }
+      ],
+      "checklist": [
+        {
+          "req": "Product Name",
+          "val": "NutriCrunch Multigrain Biscuits",
+          "status": "PASS"
+        },
+        {
+          "req": "Manufacturer",
+          "val": "Anandmilan Foods Pvt. Ltd., Nashik",
+          "status": "PASS"
+        },
+        {
+          "req": "Net Quantity",
+          "val": "200 g",
+          "status": "PASS"
+        },
+        {
+          "req": "MRP",
+          "val": "₹45.00 (incl. of all taxes)",
+          "status": "PASS"
+        },
+        {
+          "req": "Date Information",
+          "val": "Mfg 03/2026, exact best-before day not legible",
+          "status": "WARNING"
+        },
+        {
+          "req": "Mandatory Declaration",
+          "val": "FSSAI license number partially visible",
+          "status": "NEEDS VERIFICATION"
+        }
+      ],
+      "rating": 4.2,
+      "reviewCount": 486,
+      "createdAt": "2026-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "p2",
+      "barcode": "8901030992",
+      "name": "Sundara Real Orange Juice",
+      "brand": "Sundara",
+      "category": "Beverages",
+      "manufacturerId": "m2",
+      "mrp": "₹35.00",
+      "netQty": "200 ml",
+      "mfgDate": "05/2026",
+      "expiry": "11/2026",
+      "origin": "Made in India",
+      "storage": "Refrigerate after opening. Consume within 3 days.",
+      "complianceStatus": "COMPLIANT",
+      "ingredients": [
+        {
+          "name": "Orange Juice Concentrate (65%)",
+          "flag": false
+        },
+        {
+          "name": "Water",
+          "flag": false
+        },
+        {
+          "name": "Sugar",
+          "flag": false
+        },
+        {
+          "name": "Acidity Regulator (INS 330)",
+          "flag": false
+        },
+        {
+          "name": "Stabiliser (INS 440)",
+          "flag": false
+        },
+        {
+          "name": "Natural Orange Flavour",
+          "flag": false
+        }
+      ],
+      "ingredientNote": "All declared ingredients extracted clearly from the label.",
+      "nutrition": {
+        "calories": {
+          "value": 96,
+          "unit": "kcal",
+          "pct": 13
+        },
+        "sugar": {
+          "value": 20.1,
+          "unit": "g",
+          "pct": 50
+        },
+        "fat": {
+          "value": 0.1,
+          "unit": "g",
+          "pct": 1
+        },
+        "protein": {
+          "value": 0.4,
+          "unit": "g",
+          "pct": 1
+        },
+        "sodium": {
+          "value": 12,
+          "unit": "mg",
+          "pct": 1
+        }
+      },
+      "claims": [
+        {
+          "claim": "No Artificial Colours",
+          "status": "PASS",
+          "explanation": "No colour additive class names detected in the extracted ingredient list."
+        },
+        {
+          "claim": "Made with Real Fruit",
+          "status": "PASS",
+          "explanation": "Orange juice concentrate is declared as the primary ingredient, consistent with the claim."
+        }
+      ],
+      "checklist": [
+        {
+          "req": "Product Name",
+          "val": "Sundara Real Orange Juice",
+          "status": "PASS"
+        },
+        {
+          "req": "Manufacturer",
+          "val": "Sundara Beverages Ltd., Vadodara",
+          "status": "PASS"
+        },
+        {
+          "req": "Net Quantity",
+          "val": "200 ml",
+          "status": "PASS"
+        },
+        {
+          "req": "MRP",
+          "val": "₹35.00 (incl. of all taxes)",
+          "status": "PASS"
+        },
+        {
+          "req": "Date Information",
+          "val": "Mfg 05/2026, Best before 11/2026",
+          "status": "PASS"
+        },
+        {
+          "req": "Mandatory Declaration",
+          "val": "FSSAI license number clearly visible",
+          "status": "PASS"
+        }
+      ],
+      "rating": 4.5,
+      "reviewCount": 212,
+      "createdAt": "2026-02-01T00:00:00.000Z"
+    },
+    {
+      "id": "p3",
+      "barcode": "8901030775",
+      "name": "Greenfield Oats & Millet Biscuits",
+      "brand": "Greenfield Naturals",
+      "category": "Biscuits",
+      "manufacturerId": "m3",
+      "mrp": "₹52.00",
+      "netQty": "180 g",
+      "mfgDate": "04/2026",
+      "expiry": "10/2026",
+      "origin": "Made in India",
+      "storage": "Store in a cool, dry place.",
+      "complianceStatus": "COMPLIANT",
+      "ingredients": [
+        {
+          "name": "Whole Wheat Flour",
+          "flag": false
+        },
+        {
+          "name": "Rolled Oats (18%)",
+          "flag": false
+        },
+        {
+          "name": "Jaggery",
+          "flag": false
+        },
+        {
+          "name": "Foxtail Millet Flour",
+          "flag": false
+        },
+        {
+          "name": "Edible Vegetable Oil",
+          "flag": false
+        },
+        {
+          "name": "Raising Agent (INS 503(ii))",
+          "flag": false
+        }
+      ],
+      "ingredientNote": "All declared ingredients extracted clearly from the label.",
+      "nutrition": {
+        "calories": {
+          "value": 401,
+          "unit": "kcal",
+          "pct": 53
+        },
+        "sugar": {
+          "value": 9.8,
+          "unit": "g",
+          "pct": 25
+        },
+        "fat": {
+          "value": 11.4,
+          "unit": "g",
+          "pct": 38
+        },
+        "protein": {
+          "value": 9.6,
+          "unit": "g",
+          "pct": 32
+        },
+        "sodium": {
+          "value": 280,
+          "unit": "mg",
+          "pct": 28
+        }
+      },
+      "claims": [
+        {
+          "claim": "Low Sugar",
+          "status": "PASS",
+          "explanation": "Declared sugar content is within a commonly accepted low-sugar reference range for this category."
+        },
+        {
+          "claim": "Whole Grain",
+          "status": "PASS",
+          "explanation": "Whole wheat flour and rolled oats together form the majority ingredient share."
+        }
+      ],
+      "checklist": [
+        {
+          "req": "Product Name",
+          "val": "Greenfield Oats & Millet Biscuits",
+          "status": "PASS"
+        },
+        {
+          "req": "Manufacturer",
+          "val": "Greenfield Naturals, Ludhiana",
+          "status": "PASS"
+        },
+        {
+          "req": "Net Quantity",
+          "val": "180 g",
+          "status": "PASS"
+        },
+        {
+          "req": "MRP",
+          "val": "₹52.00 (incl. of all taxes)",
+          "status": "PASS"
+        },
+        {
+          "req": "Date Information",
+          "val": "Mfg 04/2026, Best before 10/2026",
+          "status": "PASS"
+        },
+        {
+          "req": "Mandatory Declaration",
+          "val": "FSSAI license number clearly visible",
+          "status": "PASS"
+        }
+      ],
+      "rating": 4.6,
+      "reviewCount": 158,
+      "createdAt": "2026-02-10T00:00:00.000Z"
+    },
+    {
+      "id": "p4",
+      "barcode": "8901030601",
+      "name": "NutriCrunch Choco Cream Wafers",
+      "brand": "NutriCrunch",
+      "category": "Biscuits",
+      "manufacturerId": "m1",
+      "mrp": "₹30.00",
+      "netQty": "75 g",
+      "mfgDate": "02/2026",
+      "expiry": "08/2026",
+      "origin": "Made in India",
+      "storage": "Store in a cool, dry place.",
+      "complianceStatus": "NEEDS VERIFICATION",
+      "ingredients": [
+        {
+          "name": "Refined Wheat Flour",
+          "flag": false
+        },
+        {
+          "name": "Sugar",
+          "flag": false
+        },
+        {
+          "name": "Cocoa Solids",
+          "flag": false
+        },
+        {
+          "name": "Vegetable Fat",
+          "flag": true,
+          "note": "Source oil not specified."
+        },
+        {
+          "name": "Emulsifiers",
+          "flag": true,
+          "note": "Individual INS numbers not legible."
+        }
+      ],
+      "ingredientNote": "2 of 5 declared ingredients need a clearer label photo to confirm full disclosure.",
+      "nutrition": {
+        "calories": {
+          "value": 512,
+          "unit": "kcal",
+          "pct": 69
+        },
+        "sugar": {
+          "value": 34.2,
+          "unit": "g",
+          "pct": 86
+        },
+        "fat": {
+          "value": 24.6,
+          "unit": "g",
+          "pct": 82
+        },
+        "protein": {
+          "value": 5.4,
+          "unit": "g",
+          "pct": 18
+        },
+        "sodium": {
+          "value": 190,
+          "unit": "mg",
+          "pct": 19
+        }
+      },
+      "claims": [
+        {
+          "claim": "Made with Real Cocoa",
+          "status": "NEEDS VERIFICATION",
+          "explanation": "Cocoa solids percentage not stated on the extracted label; confirm before relying on this claim."
+        }
+      ],
+      "checklist": [
+        {
+          "req": "Product Name",
+          "val": "NutriCrunch Choco Cream Wafers",
+          "status": "PASS"
+        },
+        {
+          "req": "Manufacturer",
+          "val": "Anandmilan Foods Pvt. Ltd., Nashik",
+          "status": "PASS"
+        },
+        {
+          "req": "Net Quantity",
+          "val": "75 g",
+          "status": "PASS"
+        },
+        {
+          "req": "MRP",
+          "val": "₹30.00 (incl. of all taxes)",
+          "status": "PASS"
+        },
+        {
+          "req": "Date Information",
+          "val": "Expiry day not legible",
+          "status": "NEEDS VERIFICATION"
+        },
+        {
+          "req": "Mandatory Declaration",
+          "val": "FSSAI license number not visible in uploaded images",
+          "status": "NEEDS VERIFICATION"
+        }
+      ],
+      "rating": 3.9,
+      "reviewCount": 97,
+      "createdAt": "2026-02-20T00:00:00.000Z"
+    },
+    {
+      "id": "p5",
+      "barcode": "8901030450",
+      "name": "Sundara Mango Sip",
+      "brand": "Sundara",
+      "category": "Beverages",
+      "manufacturerId": "m2",
+      "mrp": "₹20.00",
+      "netQty": "150 ml",
+      "mfgDate": "06/2026",
+      "expiry": "12/2026",
+      "origin": "Made in India",
+      "storage": "Store away from direct sunlight.",
+      "complianceStatus": "WARNING",
+      "ingredients": [
+        {
+          "name": "Water",
+          "flag": false
+        },
+        {
+          "name": "Sugar",
+          "flag": false
+        },
+        {
+          "name": "Mango Pulp (10%)",
+          "flag": false
+        },
+        {
+          "name": "Acidity Regulator (INS 330)",
+          "flag": false
+        },
+        {
+          "name": "Artificial Flavour",
+          "flag": true,
+          "note": "Present alongside mango pulp; proportion not declared."
+        }
+      ],
+      "ingredientNote": "1 of 5 declared ingredients needs a clearer label photo to confirm full disclosure.",
+      "nutrition": {
+        "calories": {
+          "value": 64,
+          "unit": "kcal",
+          "pct": 9
+        },
+        "sugar": {
+          "value": 15.3,
+          "unit": "g",
+          "pct": 38
+        },
+        "fat": {
+          "value": 0,
+          "unit": "g",
+          "pct": 0
+        },
+        "protein": {
+          "value": 0.1,
+          "unit": "g",
+          "pct": 0
+        },
+        "sodium": {
+          "value": 8,
+          "unit": "mg",
+          "pct": 1
+        }
+      },
+      "claims": [
+        {
+          "claim": "Made with Real Mango",
+          "status": "WARNING",
+          "explanation": "Mango pulp is present at a low declared share alongside artificial flavouring — review claim wording against actual composition."
+        }
+      ],
+      "checklist": [
+        {
+          "req": "Product Name",
+          "val": "Sundara Mango Sip",
+          "status": "PASS"
+        },
+        {
+          "req": "Manufacturer",
+          "val": "Sundara Beverages Ltd., Vadodara",
+          "status": "PASS"
+        },
+        {
+          "req": "Net Quantity",
+          "val": "150 ml",
+          "status": "PASS"
+        },
+        {
+          "req": "MRP",
+          "val": "₹20.00 (incl. of all taxes)",
+          "status": "PASS"
+        },
+        {
+          "req": "Date Information",
+          "val": "Mfg 06/2026, Best before 12/2026",
+          "status": "PASS"
+        },
+        {
+          "req": "Mandatory Declaration",
+          "val": "Fruit content percentage declared in small print",
+          "status": "WARNING"
+        }
+      ],
+      "rating": 4,
+      "reviewCount": 341,
+      "createdAt": "2026-03-01T00:00:00.000Z"
+    },
+    {
+      "id": "p_8901491101837",
+      "barcode": "901491101837",
+      "name": "Lay's Classic Salted Potato Chips",
+      "brand": "Lay's",
+      "category": "Chips & Crisps",
+      "manufacturerId": "m_mtptgnbrexf",
+      "mrp": "₹20.00",
+      "netQty": "50 g",
+      "mfgDate": "04/2026",
+      "expiry": "08/2026",
+      "origin": "Made in India",
+      "storage": "Store in a cool, dry place away from direct sunlight.",
+      "complianceStatus": "COMPLIANT",
+      "ingredients": [
+        {
+          "name": "Potato (89%)",
+          "flag": false
+        },
+        {
+          "name": "Edible Vegetable Oil (Palmolein)",
+          "flag": false
+        },
+        {
+          "name": "Iodised Salt (1.5%)",
+          "flag": false
+        }
+      ],
+      "ingredientNote": "All declared ingredients extracted clearly from the label.",
+      "nutrition": {
+        "calories": {
+          "value": 544,
+          "unit": "kcal",
+          "pct": 78
+        },
+        "sugar": {
+          "value": 0.5,
+          "unit": "g",
+          "pct": 2
+        },
+        "fat": {
+          "value": 34.5,
+          "unit": "g",
+          "pct": 100
+        },
+        "protein": {
+          "value": 7,
+          "unit": "g",
+          "pct": 28
+        },
+        "sodium": {
+          "value": 550,
+          "unit": "mg",
+          "pct": 37
+        }
+      },
+      "claims": [
+        {
+          "claim": "100% Farm-Grown Quality Potatoes",
+          "status": "PASS",
+          "explanation": "Claim text checked against standard mandatory disclosures."
+        }
+      ],
+      "checklist": [
+        {
+          "req": "Product Name",
+          "val": "Lay's Classic Salted Potato Chips",
+          "status": "PASS"
+        },
+        {
+          "req": "Manufacturer",
+          "val": "PepsiCo India Holdings Pvt. Ltd., Level 3-6, Pioneer Square, Sector 62, Near Golf Course Ext. Road, Gurugram, Haryana – 122101, India",
+          "status": "PASS"
+        },
+        {
+          "req": "Net Quantity",
+          "val": "50 g",
+          "status": "PASS"
+        },
+        {
+          "req": "MRP",
+          "val": "₹20.00 (incl. of all taxes)",
+          "status": "PASS"
+        },
+        {
+          "req": "Date Information",
+          "val": "Mfg 04/2026, Best before 08/2026",
+          "status": "PASS"
+        },
+        {
+          "req": "Mandatory Declaration",
+          "val": "FSSAI license #10014064000435 verified",
+          "status": "PASS"
+        }
+      ],
+      "rating": 4.6,
+      "reviewCount": 38,
+      "verifiedBySeller": true,
+      "createdAt": "2026-09-06T12:57:17.847Z"
+    },
+    {
+      "id": "p_8901058017687",
+      "barcode": "8901058017687",
+      "name": "Maggi 2-Minute Masala Instant Noodles",
+      "brand": "Maggi",
+      "category": "Instant Noodles & Pasta",
+      "manufacturerId": "m_mtptgqgg868",
+      "mrp": "₹14.00",
+      "netQty": "70 g",
+      "mfgDate": "03/2026",
+      "expiry": "12/2026",
+      "origin": "Made in India",
+      "storage": "Store in a cool, dry and hygienic place to protect from insects, pests and strong odours.",
+      "complianceStatus": "COMPLIANT",
+      "ingredients": [
+        {
+          "name": "Refined Wheat Flour (Maida)",
+          "flag": false
+        },
+        {
+          "name": "Palm Oil",
+          "flag": false
+        },
+        {
+          "name": "Iodised Salt",
+          "flag": false
+        },
+        {
+          "name": "Wheat Gluten",
+          "flag": false
+        },
+        {
+          "name": "Thickeners (INS 508, INS 412)",
+          "flag": false
+        },
+        {
+          "name": "Acidity Regulators (INS 501(i), INS 500(i))",
+          "flag": false
+        },
+        {
+          "name": "Humectant (INS 451(i))",
+          "flag": false
+        },
+        {
+          "name": "Masala Tastemaker: Mixed Spices (26.2%) (Onion powder, Coriander powder, Chilli powder, Turmeric powder, Garlic powder, Cumin powder, Aniseed powder, Ginger powder, Fenugreek powder, Black pepper powder, Clove powder, Green cardamom powder, Nutmeg powder)",
+          "flag": false
+        },
+        {
+          "name": "Hydrolysed Groundnut (Peanut) Protein",
+          "flag": false
+        },
+        {
+          "name": "Sugar",
+          "flag": false
+        },
+        {
+          "name": "Flavour Enhancer (INS 635)",
+          "flag": false
+        },
+        {
+          "name": "Caramel Colour (INS 150d)",
+          "flag": false
+        }
+      ],
+      "ingredientNote": "All declared ingredients extracted clearly from the label.",
+      "nutrition": {
+        "calories": {
+          "value": 427,
+          "unit": "kcal",
+          "pct": 61
+        },
+        "sugar": {
+          "value": 2.2,
+          "unit": "g",
+          "pct": 7
+        },
+        "fat": {
+          "value": 15.7,
+          "unit": "g",
+          "pct": 47
+        },
+        "protein": {
+          "value": 8,
+          "unit": "g",
+          "pct": 32
+        },
+        "sodium": {
+          "value": 1230,
+          "unit": "mg",
+          "pct": 82
+        }
+      },
+      "claims": [
+        {
+          "claim": "Goodness of Iron (15% Daily RDA Requirement per serve)",
+          "status": "PASS",
+          "explanation": "Claim text checked against standard mandatory disclosures."
+        },
+        {
+          "claim": "2-Minute Preparation",
+          "status": "PASS",
+          "explanation": "Claim text checked against standard mandatory disclosures."
+        }
+      ],
+      "checklist": [
+        {
+          "req": "Product Name",
+          "val": "Maggi 2-Minute Masala Instant Noodles",
+          "status": "PASS"
+        },
+        {
+          "req": "Manufacturer",
+          "val": "Nestlé India Limited, Nestlé House, Jacaranda Marg, 'M' Block, DLF City Phase II, Gurugram, Haryana – 122002, India",
+          "status": "PASS"
+        },
+        {
+          "req": "Net Quantity",
+          "val": "70 g",
+          "status": "PASS"
+        },
+        {
+          "req": "MRP",
+          "val": "₹14.00 (incl. of all taxes)",
+          "status": "PASS"
+        },
+        {
+          "req": "Date Information",
+          "val": "Mfg 03/2026, Best before 12/2026",
+          "status": "PASS"
+        },
+        {
+          "req": "Mandatory Declaration",
+          "val": "FSSAI license #10012011000168 verified",
+          "status": "PASS"
+        }
+      ],
+      "rating": 4.6,
+      "reviewCount": 38,
+      "createdAt": "2026-09-06T12:57:21.904Z",
+      "verifiedBySeller": true
+    },
+    {
+      "id": "p_off_8901063029255",
+      "barcode": "8901063029255",
+      "name": "Jimjam 57g (57)",
+      "brand": "Britannia",
+      "category": "Snacks",
+      "manufacturerId": "m_mtpsseuwdps",
+      "mrp": "₹20.00",
+      "netQty": "57 g",
+      "mfgDate": "03/2026",
+      "expiry": "11/2026",
+      "origin": "India",
+      "storage": "Store in a cool, dry and hygienic place away from direct sunlight.",
+      "complianceStatus": "COMPLIANT",
+      "ingredients": [
+        {
+          "name": "REFINED WHEAT FLOUR (MAIDA)",
+          "flag": false
+        },
+        {
+          "name": "SUGAR (24%)",
+          "flag": false
+        },
+        {
+          "name": "REFINED PALM OIL & INTERESTERIFIED VEGETABLE FAT",
+          "flag": false
+        },
+        {
+          "name": "INVERT SUGAR SYRUP",
+          "flag": false
+        },
+        {
+          "name": "DEXTROSE",
+          "flag": false
+        },
+        {
+          "name": "MILK PRODUCTS (MILK SOLIDS & SWEETENED CONDENSED MILK)",
+          "flag": false
+        },
+        {
+          "name": "EDIBLE MAIZE STARCH",
+          "flag": false
+        },
+        {
+          "name": "MALTODEXTRIN",
+          "flag": false
+        },
+        {
+          "name": "FRUIT PRODUCTS (0.7%) (APPLE JUICE CONCENTRATE, BANANA POWDER & PLUM JUICE CONCENTRATE)",
+          "flag": false
+        },
+        {
+          "name": "IODISED SALT",
+          "flag": false
+        },
+        {
+          "name": "EMULSIFIERS [322(i) & 471]",
+          "flag": false
+        },
+        {
+          "name": "RAISING AGENTS [503(ii) & 500(ii)]",
+          "flag": false
+        },
+        {
+          "name": "NATURE IDENTICAL AND ARTIFICIAL (MIXED FRUIT, VANILLA & BUTTER) FLAVOURING SUBSTANCES",
+          "flag": false
+        },
+        {
+          "name": "ACIDITY REGULATORS (330 & 331)",
+          "flag": false
+        },
+        {
+          "name": "GELLING AGENT (440) AND COLOUR (122). (Numbers in brackets as per International Numbering System) CONTAINS WHEAT",
+          "flag": false
+        },
+        {
+          "name": "MILK AND SOYA. ydrate-73g",
+          "flag": false
+        },
+        {
+          "name": "of which Total 31 Total Fat-19g/141 no unsaturated fatty acids-7.29 fss Lic. No. 10015 100120260N For Mfg unit address & Lic. No. read the last two characters of CWALIOR 474005",
+          "flag": false
+        },
+        {
+          "name": "MADHYA PRADESH Lic. No. the &quot;Lot No. and see address panel. 06-1.8. MANGHARAM FOODS 01129",
+          "flag": false
+        }
+      ],
+      "ingredientNote": "All declared ingredients extracted clearly from the label.",
+      "nutrition": {
+        "calories": {
+          "value": 483,
+          "unit": "kcal",
+          "pct": 69
+        },
+        "sugar": {
+          "value": 32.9,
+          "unit": "g",
+          "pct": 99
+        },
+        "fat": {
+          "value": 19,
+          "unit": "g",
+          "pct": 57
+        },
+        "protein": {
+          "value": 5,
+          "unit": "g",
+          "pct": 20
+        },
+        "sodium": {
+          "value": 211000,
+          "unit": "mg",
+          "pct": 100
+        }
+      },
+      "claims": [
+        {
+          "claim": "Green Dot India",
+          "status": "PASS",
+          "explanation": "Claim text checked against standard mandatory disclosures."
+        }
+      ],
+      "checklist": [
+        {
+          "req": "Product Name",
+          "val": "Jimjam 57g (57)",
+          "status": "PASS"
+        },
+        {
+          "req": "Manufacturer",
+          "val": "Britannia Consumer Goods Ltd., Registered Industrial Area, India",
+          "status": "PASS"
+        },
+        {
+          "req": "Net Quantity",
+          "val": "57 g",
+          "status": "PASS"
+        },
+        {
+          "req": "MRP",
+          "val": "₹20.00 (incl. of all taxes)",
+          "status": "PASS"
+        },
+        {
+          "req": "Date Information",
+          "val": "Mfg 03/2026, Best before 11/2026",
+          "status": "PASS"
+        },
+        {
+          "req": "Mandatory Declaration",
+          "val": "FSSAI license #11520021000450 verified",
+          "status": "PASS"
+        }
+      ],
+      "rating": 4.3,
+      "reviewCount": 14,
+      "verifiedBySeller": false,
+      "createdAt": "2026-09-06T12:38:27.128Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r1",
+      "productId": "p1",
+      "user": "Ankita R.",
+      "rating": 5,
+      "date": "2 weeks ago",
+      "text": "Good everyday biscuit for tea time. Kids like the taste and it doesn't feel too sweet.",
+      "pros": "Taste, texture",
+      "cons": "Packaging could reseal better",
+      "createdAt": "2026-02-20T10:00:00.000Z"
+    },
+    {
+      "id": "r2",
+      "productId": "p1",
+      "user": "Vivek S.",
+      "rating": 3,
+      "date": "1 month ago",
+      "text": "Decent, but I wish the pack clearly listed the FSSAI number — had to check the app for that.",
+      "pros": "Multigrain mix",
+      "cons": "Label print quality",
+      "createdAt": "2026-02-05T14:30:00.000Z"
+    },
+    {
+      "id": "r3",
+      "productId": "p1",
+      "user": "Priya M.",
+      "rating": 4,
+      "date": "2 months ago",
+      "text": "Good option for a quick snack. The sugar-free claim needs more clarity though.",
+      "pros": "Crunchy, filling",
+      "cons": "Claim wording",
+      "createdAt": "2026-01-12T09:15:00.000Z"
+    },
+    {
+      "id": "r4",
+      "productId": "p2",
+      "user": "Karthik N.",
+      "rating": 5,
+      "date": "3 weeks ago",
+      "text": "Tastes fresh and clean. Very good fruit content label transparency.",
+      "pros": "Real juice taste",
+      "cons": "High natural sugar",
+      "createdAt": "2026-02-15T11:00:00.000Z"
+    }
+  ],
+  "complianceRules": [
+    {
+      "id": "cr1",
+      "category": "Legal Metrology",
+      "ruleName": "Name and Address of the Manufacturer / Packer",
+      "description": "Every package must display the complete name and address of the manufacturer, packer, or importer including pincode.",
+      "standardReference": "Legal Metrology (Packaged Commodities) Rules, 2011 - Rule 6(1)(a)",
+      "isMandatory": true
+    },
+    {
+      "id": "cr2",
+      "category": "Legal Metrology",
+      "ruleName": "Standard Unit of Net Quantity",
+      "description": "Net quantity must be declared in standard metric units (g, kg, ml, l). Words like \"approx.\" or \"when packed\" are prohibited.",
+      "standardReference": "Legal Metrology Rules, 2011 - Rule 6(1)(c)",
+      "isMandatory": true
+    },
+    {
+      "id": "cr3",
+      "category": "Legal Metrology",
+      "ruleName": "Retail Sale Price (MRP Inclusive of all Taxes)",
+      "description": "Maximum Retail Price must be declared in Indian Rupees, stating \"incl. of all taxes\". Overcharging is an offence.",
+      "standardReference": "Legal Metrology Rules, 2011 - Rule 6(1)(e)",
+      "isMandatory": true
+    },
+    {
+      "id": "cr4",
+      "category": "FSSAI",
+      "ruleName": "FSSAI 14-Digit License Number & Logo",
+      "description": "The 14-digit license number of the manufacturer/brand owner must be printed on the principal display panel.",
+      "standardReference": "FSSAI (Labelling & Display) Regulations, 2020 - Reg 5(4)",
+      "isMandatory": true
+    },
+    {
+      "id": "cr5",
+      "category": "FSSAI",
+      "ruleName": "Nutritional Information Declaration",
+      "description": "Panel must state Energy (kcal), Protein (g), Carbohydrates (g), Total Sugars & Added Sugars (g), Total Fat (g), Saturated/Trans Fat (g), and Sodium (mg) per 100g/ml or per single serving.",
+      "standardReference": "FSSAI Regulations 2020 - Reg 5(3)",
+      "isMandatory": true
+    },
+    {
+      "id": "cr6",
+      "category": "FSSAI",
+      "ruleName": "Ingredient Declaration in Descending Weight Order",
+      "description": "Ingredients must be listed in descending order of their in-going weight (m/m) at the time of manufacture.",
+      "standardReference": "FSSAI Regulations 2020 - Reg 5(1)",
+      "isMandatory": true
+    },
+    {
+      "id": "cr7",
+      "category": "Claims",
+      "ruleName": "Nutrition & Health Claims Substantiation",
+      "description": "Claims such as \"Sugar Free\", \"Rich in Fibre\", or \"Low Fat\" must meet strict statutory thresholds and disclose any contrasting facts.",
+      "standardReference": "FSS (Advertising and Claims) Regulations, 2018",
+      "isMandatory": true
+    }
+  ],
+  "scanLogs": [
+    {
+      "id": "scan_1788692875452",
+      "productId": "p1",
+      "productName": "NutriCrunch Multigrain Biscuits",
+      "scanType": "barcode",
+      "status": "WARNING",
+      "timestamp": "2026-09-06T11:07:55.452Z"
+    },
+    {
+      "id": "scan_1788693004169",
+      "productId": "p1",
+      "productName": "NutriCrunch Multigrain Biscuits",
+      "scanType": "barcode",
+      "status": "WARNING",
+      "timestamp": "2026-09-06T11:10:04.169Z"
+    },
+    {
+      "id": "scan_1788693009516",
+      "productId": "p_off_8901491101837",
+      "productName": "Lays Classics Salted 20rs",
+      "scanType": "barcode",
+      "status": "NEEDS VERIFICATION",
+      "timestamp": "2026-09-06T11:10:09.516Z"
+    },
+    {
+      "id": "scan_1788693813473",
+      "productId": "p_bar_901058017687",
+      "productName": "Packaged Product (Code: 901058017687)",
+      "scanType": "barcode",
+      "status": "NEEDS VERIFICATION",
+      "timestamp": "2026-09-06T11:23:33.473Z"
+    },
+    {
+      "id": "scan_1788698098673",
+      "productId": "p_bar_901058017687",
+      "productName": "Packaged Product (Code: 901058017687)",
+      "scanType": "barcode",
+      "status": "NEEDS VERIFICATION",
+      "timestamp": "2026-09-06T12:34:58.673Z"
+    },
+    {
+      "id": "scan_1788698102295",
+      "productId": "p_bar_901058017687",
+      "productName": "Packaged Product (Code: 901058017687)",
+      "scanType": "barcode",
+      "status": "NEEDS VERIFICATION",
+      "timestamp": "2026-09-06T12:35:02.295Z"
+    },
+    {
+      "id": "scan_1788698109458",
+      "productId": "p_8901058017687",
+      "productName": "Maggi 2-Minute Masala Instant Noodles",
+      "scanType": "barcode",
+      "status": "COMPLIANT",
+      "timestamp": "2026-09-06T12:35:09.458Z"
+    },
+    {
+      "id": "scan_1788698247972",
+      "productId": "p_8901058017687",
+      "productName": "Maggi 2-Minute Masala Instant Noodles",
+      "scanType": "barcode",
+      "status": "COMPLIANT",
+      "timestamp": "2026-09-06T12:37:27.972Z"
+    },
+    {
+      "id": "scan_1788698307129",
+      "productId": "p_off_8901063029255",
+      "productName": "Jimjam 57g (57)",
+      "scanType": "barcode",
+      "status": "COMPLIANT",
+      "timestamp": "2026-09-06T12:38:27.129Z"
+    },
+    {
+      "id": "scan_1788699430458",
+      "productId": "p_8901491101837",
+      "productName": "Lay's Classic Salted Potato Chips",
+      "scanType": "barcode",
+      "status": "COMPLIANT",
+      "timestamp": "2026-09-06T12:57:10.458Z"
+    },
+    {
+      "id": "scan_1788699437848",
+      "productId": "p_8901491101837",
+      "productName": "Lay's Classic Salted Potato Chips",
+      "scanType": "barcode",
+      "status": "COMPLIANT",
+      "timestamp": "2026-09-06T12:57:17.848Z"
+    },
+    {
+      "id": "scan_1788699441905",
+      "productId": "p_8901058017687",
+      "productName": "Maggi 2-Minute Masala Instant Noodles",
+      "scanType": "barcode",
+      "status": "COMPLIANT",
+      "timestamp": "2026-09-06T12:57:21.905Z"
+    }
+  ]
+}

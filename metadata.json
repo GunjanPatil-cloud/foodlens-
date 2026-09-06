@@ -1,0 +1,6 @@
+{
+  "name": "FoodLens",
+  "description": "Smart food label scanner, OCR text extractor, and Legal Metrology compliance verification platform with real-time product comparison and authentication.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
